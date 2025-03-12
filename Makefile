@@ -19,10 +19,10 @@ create_project:
 	@echo "Creating project structure for '$(PROJECT_NAME)'..."
 	@mkdir -p "$(BASE_DIR)/src" "$(BASE_DIR)/include" "$(BASE_DIR)/bin" "$(BASE_DIR)/build" 
 	@echo "# $(PROJECT_NAME)" > "$(BASE_DIR)/README.md"
-	@echo '#include <stdio.h>\n\nint main() {\n\tprintf(\"Hello, $(PROJECT_NAME)!\n");\n\treturn 0;\n}" > "$(BASE_DIR)/src/main.c"
+	@echo '#include <stdio.h>\n\nint main() {\n\tprintf("Hello, $(PROJECT_NAME)!");\n\treturn 0;\n}' > "$(BASE_DIR)/src/main.c"
 
 	@echo "Generating gitignore file..."
-	@echo "./bin/*\nnode_modules\n" > "$(BASE_DIR)/.gitigonre"
+	@echo "bin/*\nnode_modules\n" > "$(BASE_DIR)/.gitigonre"
 	@echo "Project '$(PROJECT_NAME)' created successfully!"
 	
 	
