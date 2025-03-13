@@ -10,13 +10,12 @@ int main() {
   short shortInteger = 32767;
 
   // Parsing Data Types
-  printf("Character: %c\n", 
-         character);
-  printf("Integer: %d\n", integer);
-  printf("Flaot: %.2f\n", floating);
-  printf("Double: %.6f\n", doublePrecision);
-  printf("Long: %ld\n", longInteger);
-  printf("Short: %d\n", shortInteger);
+  printf("Character: %c, Size: %lu bytes\n", character, sizeof(character));
+  printf("Integer: %d, Size: %lu bytes\n", integer, sizeof(integer));
+  printf("Flaot: %.2f, Size: %lu bytes\n", floating, sizeof(doublePrecision));
+  printf("Double: %.6f, Size: %lu bytes\n", doublePrecision, sizeof(doublePrecision));
+  printf("Long: %ld, Size: %lu bytes\n",longInteger, sizeof(longInteger));
+  printf("Short: %d, Size: %lu bytes\n",shortInteger, sizeof(shortInteger));
   
   // Arithmetic Operations
   int a = 15, b = 4;
