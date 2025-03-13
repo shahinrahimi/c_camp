@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <limits.h>
+#include <float.h>
 
 int main() {
 	printf("### [dtype-arithmethic] ###\n");
@@ -11,11 +13,11 @@ int main() {
 
   // Parsing Data Types
   printf("Character: %c, Size: %lu bytes\n", character, sizeof(character));
-  printf("Integer: %d, Size: %lu bytes\n", integer, sizeof(integer));
-  printf("Flaot: %.2f, Size: %lu bytes\n", floating, sizeof(doublePrecision));
-  printf("Double: %.6f, Size: %lu bytes\n", doublePrecision, sizeof(doublePrecision));
-  printf("Long: %ld, Size: %lu bytes\n",longInteger, sizeof(longInteger));
-  printf("Short: %d, Size: %lu bytes\n",shortInteger, sizeof(shortInteger));
+  printf("Integer: %d, Size: %lu bytes, Min: %d, Max: %d\n", integer, sizeof(integer), INT_MIN, INT_MAX);
+  printf("Flaot: %.2f, Size: %lu bytes, Min: %e, Max: %e\n", floating, sizeof(doublePrecision), FLT_MIN, FLT_MAX);
+  printf("Double: %.6f, Size: %lu bytes, Min: %e, Max: %e\n", doublePrecision, sizeof(doublePrecision), DBL_MIN, DBL_MAX);
+  printf("Long: %ld, Size: %lu bytes, Min: %ld, Max: %ld\n",longInteger, sizeof(longInteger), LONG_MIN, LONG_MAX);
+  printf("Short: %d, Size: %lu bytes, Min: %d, Max: %d\n",shortInteger, sizeof(shortInteger), SHRT_MIN, SHRT_MAX);
   
   // Arithmetic Operations
   int a = 15, b = 4;
