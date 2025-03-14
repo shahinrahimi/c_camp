@@ -29,11 +29,19 @@ int main() {
   printf("Modulus: %d %% %d = %d\n", a, b, a % b);
 
   float x = 5.5, y = 2.2;
-  printf("\nFloating Arithmetic Operations\n");
+  printf("\nFloating Point Arithmetic Operations\n");
   printf("Addition: %.3f + %.3f = %.3f\n", x, y, x + y);
   printf("Subtraction: %.3f - %.3f = %.3f\n", x, y, x - y);
   printf("Multiplication: %.3f * %.3f = %.3f\n", x, y, x * y);
   printf("Division: %.3f / %.3f = %.3f\n", x, y, x / y);
+
+  int intValue = 7;
+  float floatValue = 3.9;
+  printf("Original int: %d, cast to float: %.2f\n", intValue, (float)intValue);
+  printf("Original float: %.2f, Cast to int: %d\n", floatValue, (int)floatValue);
+  printf("Expicit cast in division: %d / %d = %.2f (using (float) cast)\n", a, b, (float)(a / b));
+
+  
 
 	return 0;
 }
