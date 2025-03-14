@@ -44,13 +44,25 @@ int main() {
   printf("Original float: %.2f, Cast to int: %d\n", floatValue, (int)floatValue);
   printf("Expicit cast in division: %d / %d = %.2f (using (float) cast)\n", a, b, (float)(a / b));
 
-  printf("\nBlean Logic Demonstration:\n");
+  printf("\nBoolean Logic Demonstration:\n");
   bool boolA = true, boolB = false;
   printf("Boolean A: %d, Boolean B: %d\n", boolA, boolB);
   printf("A AND B: %d\n", boolA && boolB);
   printf("A OR B: %d\n", boolA || boolB);
   printf("NOT A: %d\n", !boolA);
 
+
+  printf("\nPointer and Memory Address Demonstration:\n");
+  int *intPtr = &integer;
+  float *floatPtr = &floating;
+  char *charPtr = &character;
+  bool *boolPtr = &booleanValue;
+  printf("Address of integer: %p, Value: %d, Pointer Size: %lu bytes\n", (void*)intPtr , *intPtr , sizeof(intPtr));
+  printf("Address of float: %p, Value: %.2f, Pointer Size: %lu bytes\n", (void*)floatPtr , *floatPtr , sizeof(floatPtr));
+  printf("Address of char: %p, Value: %c, Pointer Size: %lu bytes\n",(void*)charPtr , *charPtr , sizeof(charPtr));
+  printf("Address of bool: %p, Value: %d, Pointer Size: %lu bytes\n", (void*)boolPtr, *boolPtr, sizeof(boolPtr));
+
+  printf("\n\t** (Pointer size depends on system architecture: 4 bytes on a 32-bit system and 8 bytes on a 64-bit system.)");
   
 
 	return 0;
