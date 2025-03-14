@@ -22,7 +22,7 @@ create_project:
 	@echo '#include <stdio.h>\n\nint main() {\n\tprintf("Your project [$(PROJECT_NAME)] creatd!");\n\treturn 0;\n}' > "$(BASE_DIR)/src/main.c"
 
 	@echo "Generating gitignore file..."
-	@echo "bin/*\nnode_modules\n" > "$(BASE_DIR)/.gitigonre"
+	@echo "bin/*\nnode_modules\n" > "$(BASE_DIR)/.gitignore"
 	@echo "Project '$(PROJECT_NAME)' created successfully!"
 	
 	
