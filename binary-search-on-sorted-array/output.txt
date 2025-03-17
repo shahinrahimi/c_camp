@@ -1,0 +1,9 @@
+building...
+running...
+12345678 [binary-search-on-sorted-array] 91011121
+The size of sorted numbers is: 50
+
+The 32 value at 41 after 42 tries. [Brute Force]
+The 32 value at 41 after 5 tries. [Binary Search]
+The -10 value at -1 after 50 tries. [Brute Force]
+The -1 value at 8 after 4 tries. [Binary Search]
