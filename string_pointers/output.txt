@@ -1,0 +1,8 @@
+building...
+running...
+
+******* [string_pointers] *******
+
+The size of "clang" is: 5
+
+The size of "{'c', 'l', 'a', 'n', 'g', '\0'};" is: 5
