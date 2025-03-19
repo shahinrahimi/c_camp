@@ -15,6 +15,19 @@ void reverseArray(int *arr, int size) {
     end--;
   }
 }
+
+int *createArray(int size) {
+  int *arr = (int *)malloc(size * sizeof(int));
+  if (arr == NULL) {
+    printf("Memory allocation failed!\n");
+    return NULL;
+  }
+  for (int i = 0; i < size; i++){
+    arr[i] = i * 2;
+  }
+  return  arr;
+
+}
 int main() {
 	printf("##### [dynamic-memory-allocation] #####");
   int *arr;
@@ -37,14 +50,22 @@ int main() {
   printf("\nBefore Swap: x = %d, y = %d\n", x, y);
   swap(&x, &y);
   printf("\nAfter Swap: x = %d, y = %d\n", x, y);
+  free(arr);
 
-  reverseArray(arr, n);
-  printf("\nReveresed Array: ");
-  for (int i=0;i < n; i++){
-    printf("%d ", arr[i]);
+  int n2 = 10;
+  int *arr2 = createArray(n2);
+  printf("\nOriginal Array: ");
+  for (int i=0; i < n2; i++){
+    printf("%d ", arr2[i]);
   }
 
-  free(arr);
+  reverseArray(arr2, n2);
+  printf("\nReveresed Array: ");
+  for (int i=0;i < n2; i++){
+    printf("%d ", arr2[i]);
+  }
+
+  free(arr2);
 
 	return 0;
 }
