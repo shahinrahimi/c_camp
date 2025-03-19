@@ -5,4 +5,6 @@ running...
 
 The size of "clang" is: 5
 
-The size of "{'c', 'l', 'a', 'n', 'g', '\0'};" is: 5
+The size of "{'c', 'l', 'a', 'n', 'g', '\0'}" is: 5
+
+My two strins are "clang" and "golang", after concatenation is: "clanggolang"
