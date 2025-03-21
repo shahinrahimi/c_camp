@@ -24,11 +24,13 @@ int listContacts() {
     printf("failed to read file");
     return 1;
   }
-  Student students[10];
-  fread(students, sizeof(Student), 10, file);
+  Student students[20];
+  fread(students, sizeof(Student), 20, file);
   for (int i=0; i < sizeof(students) / sizeof(Student); i++) {
     printf("%d - Name: %s, Age: %d, GPA: %.3f\n", i, students[i].name, students[i].age, students[i].gpa);
   }
+
+  fclose(file);
 
   return 0;
 
